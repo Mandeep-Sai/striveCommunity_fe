@@ -34,7 +34,7 @@ class Home extends Component {
     }
   };
   componentDidMount = async () => {
-    const response = await fetch("http://localhost:3007/students");
+    const response = await fetch("http://localhost:3002/students");
     const students = await response.json();
     this.setState({ students });
   };
