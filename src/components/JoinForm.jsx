@@ -32,7 +32,7 @@ export class JoinForm extends Component {
   sendInfo = async (e) => {
     e.preventDefault();
     var url = "https://maps.googleapis.com/maps/api/geocode/json";
-    var postUrl = "http://localhost:3002/students";
+    var postUrl = "https://strivecommunitybe.herokuapp.com/students";
     await axios
       .get(url, {
         params: {
